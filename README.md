@@ -53,6 +53,12 @@ Se você optar por utilizar o GitHub CodeSpace, todas as etapas que envolvem a i
 5. Execute `yarn dev` para iniciar o projeto
 6. teste a API no navegador acessando [http://localhost:8080](http://localhost:8080). Se você estiver utilizando o GitHub CodeSpaces, deverá consultar instruções da plataforma de como acessar o servidor. Além disso, se você utilizar o GitHub CodeSpaces, terá de atualizar a URL da API no projeto `web` para a URL correta.
 
+# Entrega
+
+1. Publique o seu código em um repositório público no GitHub utilizando a sua conta pessoal.
+2. Encaminhe o seu nome completo e o link público desse repositório para o e-mail `contato@privacy21.com`.
+3. Tente abrir o link em uma aba anônima do navegador para garantir que o avaliador conseguirá acessá-lo.
+4. Consulte as instruções de avaliação nesse documento.
 
 # Avaliação
 
