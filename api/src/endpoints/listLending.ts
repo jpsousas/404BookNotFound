@@ -1,14 +1,7 @@
 import { Request, Response } from "express";
 
-interface Book {
-    id: string;
-    name: string;
-    author: string;
-    publicationYear: string;
-}
-
-export const listBooks = (request: Request, response: Response) => {
-    const books: Book[] = [
+export const listLending = (request: Request, response: Response) => {
+    const lendings = [
         {
             id: "cf93597d",
             name: "Código Limpo (Clean Code)",
@@ -16,5 +9,5 @@ export const listBooks = (request: Request, response: Response) => {
             publicationYear: "2012",
         }
     ]
-    response.json(books)
+    response.json(lendings)
 }
