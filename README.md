@@ -1,18 +1,19 @@
 # privacy-21-desafio-dev-q4-2024
 
-Desenvolva uma aplicação para uma biblioteca, em que seja possível gerenciar os empréstimos de livros, e calcular a multa no caso de devolução atrasada, ou não devolução.
+Desenvolva uma aplicação para uma biblioteca em que seja possível gerenciar os empréstimos de livros e calcular a multa no caso de devolução atrasada ou não devolução.
 
 Especificações:
 
-- Deve ser possível listar cada um dos empréstimos realizados, que podem estar em dois estados: emprestado e devolvido
+- Deve ser possível listar cada um dos empréstimos realizados, que podem estar em dois estados: "emprestado" e "devolvido".
 - Será necessário coletar as datas de empréstimo e devolução, para calcular uma possível multa.
-- Logo ao emprestar um livro, você deverá calcular automaticamente a data de retorno sendo 30 dias após a data da realização do empréstimo. Se a data de devolução for um sábado, ou domingo, você deve considerar segunda-feira.
-- Se a devolução ocorrer em até um dia atrasado, deveremos considerar o empréstimo como devolvido com atraso, mas não há multa.
-- Após um dia de atraso, cada dia acresce a multa em R$ 00,50 (cinquenta centavos).
-- Ao criar um empréstimo, ele estará no estado "empresatado", e não "devolvido".
-- As informações devem ser persistidas no banco de dados, de forma que ao reiniciar as aplicações, os dados sejam mantidos. O back-end já possui um banco de dados configurado utilizando Docker, e você deve utilizá-lo para todos os tipos de persistência.
-- Lembre-se que por mais que seja uma aplicação demonstrativa, a segurança e confiabilidade dela será considerada na avaliação.
-- Você deverá persistir os dados no banco de dados Postgre, que é executado automaticamente junto ao servidor de api (e que já está configurado).
+- Ao realizar o empréstimo de um livro, a data de retorno deve ser calculada automaticamente como 30 dias após a data do empréstimo. Se a data de devolução for um sábado ou domingo, a data de retorno deve ser ajustada para a próxima segunda-feira.
+- Se a devolução ocorrer com até um dia de atraso, o empréstimo será considerado devolvido com atraso, mas não haverá multa.
+- Após um dia de atraso, a multa será de R$ 0,50 (cinquenta centavos) por dia de atraso adicional.
+- Ao criar um empréstimo, ele deve iniciar no estado "emprestado" e só será alterado para "devolvido" quando o livro for retornado.
+- As informações devem ser persistidas no banco de dados, de forma que, ao reiniciar a aplicação, os dados sejam mantidos.
+- O back-end já possui um banco de dados configurado utilizando Docker, e você deve utilizá-lo para todas as operações de persistência.
+- A aplicação deve persistir os dados no banco de dados PostgreSQL, que é executado automaticamente junto com o servidor de API (e já está configurado).
+- Embora seja uma aplicação demonstrativa, a segurança e confiabilidade da solução serão fatores considerados na avaliação.
 
 Convidamos você a utilizar os projetos já existentes nas pastas `api` e `web`.
 
