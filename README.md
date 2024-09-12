@@ -23,7 +23,7 @@ Permitirmos que você altere o projeto como preferir, incluindo dependências, l
 
 O projeto é dividido entre api e web:
 
-- API (pasta `api`): Projeto que expões as rotas da API pela interface HTTP. 
+- API (pasta `api`): Projeto em Node.JS que expões as rotas da API por uma interface HTTP. 
 - Web (pasta `web`): Front-end em React que consome as rotas providas pela API
 
 Devido à existência de duas aplicações, será necessário executar os dois processos separados em dois terminais distintos do sistema operacional.
