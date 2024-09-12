@@ -4,10 +4,11 @@ Desenvolva uma aplicação para uma biblioteca em que seja possível gerenciar o
 
 #### Especificações:
 
-- Deve ser possível listar cada um dos empréstimos realizados, que podem estar nos seguintes estados: "emprestado", "devolvido" e "extraviado".
+- Deve ser possível criar, editar, listar e excluir cada um dos empréstimos realizados
+- Um empréstimo pode estar em um dos seguintes estados: "emprestado", "devolvido" ou "extraviado".
 - O empréstimo de um livro é iniciado no estado "emprestado", e depois podemos definí-lo como "devolvido" ou "extraviado".
 - Será necessário coletar as datas de empréstimo e devolução, para calcular uma possível multa.
-- Ao realizar o empréstimo de um livro, a data de retorno deve ser calculada automaticamente como 30 dias após a data do empréstimo. Se a data de devolução for um sábado ou domingo, a data de retorno deve ser ajustada para a próxima segunda-feira.
+- Ao realizar o empréstimo de um livro, a data de retorno deve ser calculada automaticamente como 30 dias após a data de início do empréstimo. Se a data de devolução for um sábado ou domingo, a data de retorno deve ser ajustada para a próxima segunda-feira.
 - Se a devolução ocorrer com até um dia de atraso, o empréstimo será considerado devolvido com atraso, mas não haverá multa.
 - Após um dia de atraso, a multa será de R$ 0,50 (cinquenta centavos) por dia de atrasado (incluindo o primeiro dia de atraso).
 - Todas as informações devem ser persistidas no banco de dados, de forma que, ao reiniciar a aplicação, os dados sejam mantidos.
