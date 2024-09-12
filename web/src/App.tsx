@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Container, Nav, NavDropdown, Table, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Menu } from './components/menu';
-import { BooksList } from './components/books-list';
+import { BookLoanList } from './components/book-loan-list';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Container className="mt-3">
         <Row>
           <Col>
-            <BooksList/>
+            <BookLoanList/>
           </Col>
         </Row>
       </Container>

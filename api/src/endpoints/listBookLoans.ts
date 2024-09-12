@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-export const listLending = (request: Request, response: Response) => {
+export const listBookLoans = (request: Request, response: Response) => {
     const lendings = [
         {
             id: "cf93597d",

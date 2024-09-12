@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Navbar, Container, Nav, NavDropdown, Table } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Book, getBooks } from '../../services/BooksService';
+import { getBookLoans } from '../../services/BookLoansService';
 
-export function BooksList() {
-  const [books, setBooks] = useState<Book[]>([])
+export function BookLoanList() {
+  const [loans, setLoans] = useState<any[]>([])
 
   useEffect(() => {
-    getBooks().then(setBooks)
+    getBookLoans().then(setLoans)
   }, [])
 
   return (
@@ -22,11 +22,11 @@ export function BooksList() {
           </tr>
         </thead>
         <tbody>
-          {books.map(book => (
-            <tr key={book.id}>
-            <td>{book.id}</td>
-            <td>{book.name}</td>
-            <td>{book.author}</td>
+          {loans.map(loan => (
+            <tr key={loan.id}>
+            <td>{loan.id}</td>
+            <td>{loan.name}</td>
+            <td>{loan.author}</td>
             <td></td>
           </tr>
           ))}

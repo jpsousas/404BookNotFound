@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import { listLending } from "./endpoints/listLending"
+import { listBookLoans } from "./endpoints/listBookLoans"
 
 const API_PORT = 8080
 
@@ -13,7 +13,7 @@ api.use(cors({
 api.get("/", (request, response) => {
     response.send("API is up")
 })
-api.get("/lendings", listLending)
+api.get("/book-loans", listBookLoans)
 
 api.listen(API_PORT, "0.0.0.0", () => {
     console.log(`API running on port ${API_PORT}`)
