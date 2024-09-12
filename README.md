@@ -10,7 +10,7 @@ Especificações:
 - Se a devolução ocorrer em até um dia atrasado, deveremos considerar o empréstimo como devolvido com atraso, mas não há multa.
 - Após um dia de atraso, cada dia acresce a multa em R$ 00,50 (cinquenta centavos).
 - Ao criar um empréstimo, ele estará no estado "empresatado", e não "devolvido".
-- As informações devem ser persistidas em banco de dados, de forma que ao reiniciar as aplicações, os dados sejam mantidos.
+- As informações devem ser persistidas no banco de dados, de forma que ao reiniciar as aplicações, os dados sejam mantidos. O back-end já possui um banco de dados configurado utilizando Docker, e você deve utilizá-lo para todos os tipos de persistência.
 - Lembre-se que por mais que seja uma aplicação demonstrativa, a segurança e confiabilidade dela será considerada na avaliação.
 - Você deverá persistir os dados no banco de dados Postgre, que é executado automaticamente junto ao servidor de api (e que já está configurado).
 
