@@ -17,7 +17,7 @@ Desenvolva uma aplicação para uma biblioteca em que seja possível gerenciar o
 
 Convidamos você a utilizar os projetos já existentes nas pastas `api` e `web`.
 
-Permitirmos que você altere o projeto como preferir, incluindo dependências, layout, recursos extras, etc. Apenas atente-se à forma como o projeto será avaliado ao final desse documento.
+Permitirmos que você altere o projeto como preferir, incluindo dependências, layout, bibliotecas, documentação no README, recursos extras, etc. Apenas atente-se às Instruções de Avaliação presentes no final desse documento.
 
 # Instruções para executar o projeto
 
