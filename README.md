@@ -49,10 +49,11 @@ Se você optar por utilizar o GitHub CodeSpace, todas as etapas que envolvem a i
 1. Instale o Node.JS versão 20 na sua máquina
 2. Instale o Docker e o Docker Compose na sua máquina
 3. Abra um novo terminal, ou uma nova aba no mesmo terminal
-4. Entre na pasta `api` com `cd api`
-5. Execute `yarn dev` para iniciar o projeto
-6. teste a API no navegador acessando [http://localhost:8080](http://localhost:8080). Se você estiver utilizando o GitHub CodeSpaces, deverá consultar instruções da plataforma de como acessar o servidor. Além disso, se você utilizar o GitHub CodeSpaces, terá de atualizar a URL da API no projeto `web` para a URL correta.
-7. O back-end já possui um ambiente com o banco de dados PostgreSQL instalado no formato de contêiners Docker, e pode ser acessado pelo endereço "database" na porta 5432 (se estiver dentro de um container) ou "127.0.0.1" na porta 5432 (se estiver em na sistema primário).
+5. Entre na pasta `api` com `cd api`
+6. Instale as dependências com `yarn install`
+7. Execute `yarn dev` para iniciar o projeto
+8. Teste a API no navegador acessando [http://localhost:8080](http://localhost:8080). Se você estiver utilizando o GitHub CodeSpaces, deverá consultar instruções da plataforma de como acessar o servidor. Além disso, se você utilizar o GitHub CodeSpaces, terá de atualizar a URL da API no projeto `web` para a URL correta.
+9. O back-end já possui um ambiente com o banco de dados PostgreSQL instalado no formato de contêiners Docker, e pode ser acessado pelo endereço "database" na porta 5432 (se estiver dentro de um container) ou "127.0.0.1" na porta 5432 (se estiver em um sistema operacional nativo).
 
 # Entrega
 
