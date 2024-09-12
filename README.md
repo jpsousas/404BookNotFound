@@ -57,23 +57,24 @@ Se você optar por utilizar o GitHub CodeSpace, todas as etapas que envolvem a i
 
 # Entrega
 
-1. Publique o seu código em um repositório público no GitHub utilizando a sua conta pessoal.
-2. Encaminhe o seu nome completo, e-mail para contato e o link público do seu repositório no GitHub para o e-mail `pedro@privacy21.com` **até as 23:59:59 do dia 15 de Setembro de 2024**.
-3. Tente abrir o link em uma aba anônima do navegador para garantir que o avaliador conseguirá acessá-lo.
-4. Consulte as instruções de avaliação nesse documento.
+1. Consulte as Instruções de Avaliação presentes nesse documento (as quais o avaliador utilizará).
+2. Publique o seu código em um repositório público no GitHub utilizando a sua conta pessoal.
+3. Encaminhe o seu nome completo, e-mail e o link público do seu repositório no GitHub para o e-mail `pedro@privacy21.com` **até as 23:59:59 horas do dia 15 de Setembro de 2024 (domingo)**.
+4. Tente abrir o link em uma aba anônima do navegador para garantir que o avaliador conseguirá acessá-lo.
 
-# Avaliação
+# Instruções de Avaliação
 
 O projeto será executado em um [GitHub CodeSpace](https://docs.github.com/pt/codespaces/overview). Por isso, é uma boa ideia testar o seu repositório nessa plataforma para garantir que o projeto roda corretamente em um CodeSpace recém criado.
 
 Processo que o avaliador realizará para executar o seu projeto:
 
 1. Abrir o repositório em um CodeSpace
-2. No primeiro terminal entrar na pasta api, e executar o comando `yarn dev`
-3. No segundo terminal entrar na pasta web, e executar o comando `yarn dev`
-4. Altere a porta 8080 para visibilidade pública na lista de portas redirecionadas pelo GitHub CodeSpace
-5. Autualize a URL presente em `web/src/services/Api.ts` para a fornecida pelo GitHub CodeSpace na porta 8080.
+2. Instalar as dependências do front-end e back-end.
+3. No primeiro terminal entrar na pasta api, e executar o comando `yarn dev`
+4. No segundo terminal entrar na pasta web, e executar o comando `yarn dev`
+5. Alterar a porta 8080 para visibilidade pública na lista de portas redirecionadas pelo GitHub CodeSpace
+6. Autualize a URL presente em `web/src/services/Api.ts` para a fornecida pelo GitHub CodeSpace na porta 8080 para que a API seja acessada.
 
 Se a aplicação não rodar, ou não foi possível acessá-la, o candidato será desclassificado.
 
-Com o projeto rodando, o avaliador realizará os testes funcionais, clicando nos elementos e identificando os resultados. Após isso, será realizada uma análise do código desenvolvido pelo candidato.
+Com o projeto rodando, o avaliador realizará os testes funcionais, clicando nos elementos e identificando os resultados. Após isso, será realizada uma análise de código, organização e segurança no repositório.
