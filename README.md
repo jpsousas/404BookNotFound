@@ -1,19 +1,18 @@
 # privacy-21-desafio-dev-q4-2024
 
-Desenvolva uma aplicação para uma biblioteca, em que seja possível gerenciar os empréstimos, e calcular a multa no caso de devolução atrasada, ou não devolução.
+Desenvolva uma aplicação para uma biblioteca, em que seja possível gerenciar os empréstimos de livros, e calcular a multa no caso de devolução atrasada, ou não devolução.
 
 Especificações:
 
-1. Cada pessoa pode realizar mais de um empréstimo ao mesmo tempo
-2. Deve ser possível listar cada um dos empréstimos realizados, que podem estar em dois estados: emprestado e devolvido
-3. Será necessário coletar as datas de empréstimo e devolução, para calcular uma possível multa.
-4. Logo ao emprestar um livro, você deverá calcular automaticamente a data de retorno sendo 30 dias após a data da realização do empréstimo. Se a data de devolução for um sábado, ou domingo, você deve considerar segunda-feira.
-5. Se a devolução ocorrer em até um dia atrasado, deveremos considerar o empréstimo como devolvido com atraso, mas não há multa.
-6. Após um dia de atraso, cada dia acresce a multa em R$ 00,50 (cinquenta centavos).
-7. Ao criar um empréstimo, ele estará no estado "empresatado", e não "devolvido".
-8. As informações devem ser persistidas em banco de dados, de forma que ao reiniciar as aplicações, os dados sejam mantidos.
-9. Lembre-se que por mais que seja uma aplicação demonstrativa, a segurança e confiabilidade dela será considerada na avaliação.
-10. Você deverá persistir os dados no banco de dados Postgre, que é executado automaticamente junto ao servidor de api (e que já está configurado).
+- Deve ser possível listar cada um dos empréstimos realizados, que podem estar em dois estados: emprestado e devolvido
+- Será necessário coletar as datas de empréstimo e devolução, para calcular uma possível multa.
+- Logo ao emprestar um livro, você deverá calcular automaticamente a data de retorno sendo 30 dias após a data da realização do empréstimo. Se a data de devolução for um sábado, ou domingo, você deve considerar segunda-feira.
+- Se a devolução ocorrer em até um dia atrasado, deveremos considerar o empréstimo como devolvido com atraso, mas não há multa.
+- Após um dia de atraso, cada dia acresce a multa em R$ 00,50 (cinquenta centavos).
+- Ao criar um empréstimo, ele estará no estado "empresatado", e não "devolvido".
+- As informações devem ser persistidas em banco de dados, de forma que ao reiniciar as aplicações, os dados sejam mantidos.
+- Lembre-se que por mais que seja uma aplicação demonstrativa, a segurança e confiabilidade dela será considerada na avaliação.
+- Você deverá persistir os dados no banco de dados Postgre, que é executado automaticamente junto ao servidor de api (e que já está configurado).
 
 Convidamos você a utilizar os projetos já existentes nas pastas `api` e `web`.
 
@@ -52,6 +51,7 @@ Se você optar por utilizar o GitHub CodeSpace, todas as etapas que envolvem a i
 4. Entre na pasta `api` com `cd api`
 5. Execute `yarn dev` para iniciar o projeto
 6. teste a API no navegador acessando [http://localhost:8080](http://localhost:8080). Se você estiver utilizando o GitHub CodeSpaces, deverá consultar instruções da plataforma de como acessar o servidor. Além disso, se você utilizar o GitHub CodeSpaces, terá de atualizar a URL da API no projeto `web` para a URL correta.
+7. O back-end já possui um ambiente com o banco de dados PostgreSQL instalado no formato de contêiners Docker, e pode ser acessado pelo endereço "database" na porta 5432 (se estiver dentro de um container) ou "127.0.0.1" na porta 5432 (se estiver em na sistema primário).
 
 # Entrega
 
