@@ -56,7 +56,7 @@ Se você optar por utilizar o GitHub CodeSpace, todas as etapas que envolvem a i
 # Entrega
 
 1. Publique o seu código em um repositório público no GitHub utilizando a sua conta pessoal.
-2. Encaminhe o seu nome completo e o link público desse repositório para o e-mail `contato@privacy21.com`.
+2. Encaminhe o seu nome completo, e-mail para contato e o link público do seu repositório no GitHub para o e-mail `pedro@privacy21.com` **até as 23:59:59 do dia 15 de Setembro de 2024**.
 3. Tente abrir o link em uma aba anônima do navegador para garantir que o avaliador conseguirá acessá-lo.
 4. Consulte as instruções de avaliação nesse documento.
 
