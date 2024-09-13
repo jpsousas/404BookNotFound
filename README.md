@@ -2,7 +2,7 @@
 
 Desenvolva uma aplicação para uma biblioteca em que seja possível gerenciar os empréstimos de livros e calcular a multa no caso de devolução atrasada ou não devolução.
 
-#### Especificações:
+#### Especificações: 
 
 - Deve ser possível criar, editar, listar e excluir cada um dos empréstimos realizados
 - Um empréstimo pode estar em um dos seguintes estados: "emprestado", "devolvido" ou "extraviado".
